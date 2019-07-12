@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Circle = function (radius) {
+        this.radius = radius;
+        this.getRadius = function () {
+            return radius;
+        }
+        this.getArea = function () {
+            return Math.PI * radius * radius;
+        }
+    }
+    // Sử dụng lớp vừa tạo. Tạo đối tượng hình tròn với bán kính là 2
+        let cirle =  new Circle(2);
+        let cirle1 = new Circle (5)
+        let radius = cirle1.getRadius(); //5
+        console.log(radius);
+        let area = cirle1.getArea(); //12.566
+        alert   ("radius = " + radius + "<br>" + " area =" + area);
+</script>
+
+</body>
+</html>
